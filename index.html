@@ -58,13 +58,14 @@ div:nth-of-type(3) {
     float: left;
     width: 140px;
     padding: 20px;
+}
+
+.floatedElements:nth-of-type(odd) {
+    margin-left: 10px;
     margin-right: 10px;
 }
 
-
-
-
-article:after {
+article::after {
     visibility: hidden;
     display:block;
     content: " ";
@@ -108,9 +109,9 @@ and height + padding + border = actual visible/rendered height of box</p>
 
 <article class = "floatedElements">
     <p>Let's look at floated elements</p>
-    <div>Floated Box 1</div>
-    <div>Floated Box 2</div>
-    <div>Floated Box 3</div>
+    <div class = "floatedElements">Floated Box 1</div>
+    <div class = "floatedElements">Floated Box 2</div>
+    <div class = "floatedElements">Floated Box 3</div>
 </article>
 
 <!-- Update the footer content with the correct year and your name -->
